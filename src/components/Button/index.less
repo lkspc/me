@@ -1,0 +1,21 @@
+@import "../../themes/var.less";
+
+.react-editor-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px 5px;
+  color: @text-color;
+
+  &--active {
+    color: @primary-color;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: @background-color;
+  }
+
+  & + & {
+    margin-left: 16px;
+  }
+}

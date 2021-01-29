@@ -1,0 +1,44 @@
+{
+  "name": "@lkspc/editor",
+  "version": "0.0.1",
+  "description": "React editor built with draftjs",
+  "author": "lkspc <lkspc@qq.com>",
+  "homepage": "https://github.com/lkspc/editor/tree/master#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "stat": "father doc dev",
+    "dev": "father doc dev",
+    "build": "father build",
+    "doc": "father doc build"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lkspc/editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lkspc/editor/issues"
+  },
+  "dependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/draft-js": "^0.10.44",
+    "classnames": "^2.2.6",
+    "draft-js": "^0.11.7"
+  },
+  "devDependencies": {
+    "father": "^2.30.1",
+    "typescript": "^4.1.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
