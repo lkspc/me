@@ -1,9 +1,17 @@
-import { t } from "../../locales";
-import { ICtrolType } from "../../types";
+import { RichUtils } from 'draft-js';
+import { IControl } from '../../components/Control';
 
-const Bold: ICtrolType = {
-  name: t("controls.bold"),
-  title: t("controls.bold")
+export const Bold: IControl = {
+  name: 'controls.bold',
+  type: 'button',
+  tooltip: 'controls.bold',
+  active: (editor) => {
+    return editor.state.getCurrentInlineStyle().has('BOLD');
+  },
+  onCommand: (editor) => {
+    const state = RichUtils.toggleInlineStyle(editor.state, 'BOLD');
+    editor.update(state);
+  },
 };
 
 export default Bold;

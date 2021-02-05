@@ -1,3 +1,4 @@
 export default {
-  "controls.bold": "bold"
+  'controls.bold': 'Bold',
+  'controls.heading': 'Heading',
 };

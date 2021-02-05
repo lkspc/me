@@ -1,0 +1,17 @@
+@import '../../themes/var.less';
+
+.react-editor-toolbar {
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.react-editor-control {
+  box-sizing: border-box;
+  min-width: @control-size;
+  height: @control-size;
+
+  & + & {
+    margin-left: 16px;
+  }
+}
